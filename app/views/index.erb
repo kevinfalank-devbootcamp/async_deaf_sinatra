@@ -1,10 +1,8 @@
 <div class="container">
   <h1>Deaf Grandma</h1>
-  <% if @grandma %>
-    <p>Grandma says: "<span id="grandma_says"><%= @grandma %></span>"</p>
-  <% end %>
+  <span id="grandma_says"><%= @grandma %></span>
 
-  <form action="/grandma" method="post">
+  <form action="/grandma" method="post" id="granny">
     Say something to Grandma:
     <br>
     <input type="text" name="user_input">
